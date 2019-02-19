@@ -1,0 +1,133 @@
+body{
+    font-family: 'Lato', sans-serif;
+    color: #414042;
+
+}
+
+/* HEADER START */
+
+header{
+    float: left;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #07070730;
+}
+.navbar-toggler{
+    border:1px solid #fff;
+    color: #fff !important;
+    cursor: pointer;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding-left: 0rem ;
+    padding-right: 0rem ;
+    padding-top: 2.5rem ;
+    padding-bottom: 2.5rem ;
+    border-top:2px solid transparent;
+    text-transform: uppercase;
+    font-size: 13px;
+
+}
+.nav-item{
+    padding-left: 1rem ;
+    padding-right: 1rem ;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    border-top:2px solid #4bcaff;
+    color: #4bcaff;
+}
+.navbar{
+    padding: 0;
+}
+.navbar-toggler .fa-bars{
+    font-size: 18px;
+    cursor: pointer;
+}
+.navbar-custom .navbar-nav .nav-link{
+    color: #fff;
+}
+/* HEADER END */
+
+/* Home Background */
+.background-top{
+    float: left;
+    width: 100%;
+    background-image: url(../images/bgtop.png);
+    background-size: 100% 100%;
+}
+.home-text{
+    padding-top: 24rem;
+    padding-bottom: 10rem;
+    color: #fff;
+}
+.home-text h1{
+    font-size: 48px;
+}
+.home-text p{
+    font-size: 18px;
+}
+.btn-down{
+    width: 200px;
+    height: 65px;
+    text-align: center;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 3rem 0;
+}
+.btn-down:hover{
+    border:4px solid transparent;
+    border-bottom: 4px solid #277697; 
+    background: #4bcaff;
+}
+.fa-android,
+.fa-apple{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #171a1f;
+    text-align: center;
+    font-size: 24px !important;
+    padding: 10px 0;
+    margin-left: 20px;
+}
+.fa-apple{
+    padding: 13px 0; 
+}
+.fa-android:hover,
+.fa-apple:hover{
+    color:#4bcaff;
+    cursor: pointer;
+}
+@media (max-width: 1200px){
+    /* HOME START */
+    .home-text {
+        padding-top: 9rem;
+        padding-bottom: 2rem;
+        color: #fff;
+    }
+}
+
+@media (max-width: 991px){
+    header{
+
+        background-color: #070707;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+        border-top: 2px solid transparent;
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+    .nav-item{
+        text-align: center;
+    }
+}
