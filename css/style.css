@@ -85,8 +85,7 @@ header{
     border-bottom: 4px solid #277697; 
     background: #4bcaff;
 }
-.fa-android,
-.fa-apple{
+.fa-android{
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -97,8 +96,16 @@ header{
     margin-left: 20px;
 }
 .fa-apple{
-    padding: 13px 0; 
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #171a1f;
+    text-align: center;
+    font-size: 24px !important;
+    padding: 11px 0;
+    margin-left: 20px;
 }
+
 .fa-android:hover,
 .fa-apple:hover{
     color:#4bcaff;
