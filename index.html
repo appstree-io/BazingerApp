@@ -26,28 +26,28 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item ">
-                                <a class="nav-link" href="#">HOME</a>
+                                <a class="nav-link" href="#home">HOME</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
+                                <a class="nav-link" href="#feature">Features</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Gallery</a>
+                                <a class="nav-link" href="#gallery">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">video</a>
+                                <a class="nav-link" href="#video">video</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">PriceS</a>
+                                <a class="nav-link" href="#price">PriceS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Testimonials</a>
+                                <a class="nav-link" href="#testimonials">Testimonials</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">DOWNLOAD</a>
+                                <a class="nav-link" href="#download">DOWNLOAD</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">CONTACT</a>
+                                <a class="nav-link" href="#contact">CONTACT</a>
                             </li>
                             
                         </ul>
@@ -57,7 +57,7 @@
         </header>
     <!-- Header End -->
     <!--HOME Background Start -->
-        <section class="background-top">
+        <section class="background-top" id="home">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5"></div>
@@ -76,7 +76,7 @@
     <!--HOME Background End -->
 
     <!-- summarise the features start -->
-        <section class="summarise">
+        <section class="summarise" id="feature">
             <div class="container">
                 <h1>summarise the features</h1>
                 <p>summarise what your product is all about </p>
@@ -123,7 +123,7 @@
     <!-- summarise the features End -->
 
     <!-- show the gallery start -->
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="container">
                 <h1>show the gallery</h1>
                 <p>summarise what your product is all about </p>
@@ -199,7 +199,7 @@
 
     <!-- Video Start -->
 
-        <section class="video-landing">
+        <section class="video-landing" id="video">
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 offset-md-1">
@@ -215,7 +215,7 @@
 
     <!-- Video End -->
     <!-- choose your price start-->
-        <section class="price">
+        <section class="price" id="price">
             <div class="container-fluid">
                 <h1>choose your price</h1>
                 <p>summarise what your product is all about </p>
@@ -263,7 +263,7 @@
     <!-- choose your price start-->
         
     <!-- testimonials start -->
-        <section class="testimonials">
+        <section class="testimonials" id="testimonials">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6 col-md-8">
@@ -338,7 +338,7 @@
     <!-- testimonials End -->
 
     <!-- Do you Like this app Start -->
-        <section class="like">
+        <section class="like" id="download" >
             <div class="text-center">
                 <h1>Do you Like this app?</h1>
                 <button class="btn-down m-0 mt-3 ">DOWNLOAD NOW</button>
@@ -347,7 +347,7 @@
     <!-- Do you Like this app End -->
 
     <!-- contact start -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-7 col-lg-5">
@@ -388,6 +388,34 @@
         </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script src="js/bootstrap.min.js" ></script>
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+    </script>
 </body>
 </html>

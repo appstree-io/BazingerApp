@@ -9,7 +9,7 @@ body{
 header{
     float: left;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
@@ -513,6 +513,8 @@ footer p{
         width: 140px;
         height: 36px;
         border-radius: 5px;
+        font-size: 12px;
+
     }
 }
 
